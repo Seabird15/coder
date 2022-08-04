@@ -4,10 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <h1>validacion1</h1>
+    <div class="header">
+        <h1>FITNESS PARA TODOS</h1>
+        <img src="/Media/logoooo.png" alt="">
+    </div>
+    <div class="page-nav">
+        <img src="/Media/Diseño sin título.png" alt="" class="banner">
+        <button id= "checkout" class="button-checkout" onclick="pay()">Pagar</button>
+    </div>
+    <hr>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="#" class="nav-link">Inicio</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">Quienes somos</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">Planes</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">Contactanos</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="page-content">
+    <div class="product-container">
+        <h3>Plan Básico</h3>
+        <img src="./Media/Captura.PNG" alt="">
+        <h2>$20.000</h2>
+        <button class="button-add" onclick="add('product-1', 20000)">Agregar </button>
+    </div>
+    <div class="product-container">
+        <h3>Plan Intermedio</h3>
+        <img src="./Media/Captura2.PNG" alt="">
+        <h2>$40.000</h2>
+        <button class="button-add" onclick="add('product-2', 40000)">Agregar </button>
+    </div>
+    <div class="product-container">
+        <h3>Plan Intermedio 2</h3>
+        <img src="./Media/Captura3.PNG" alt="">
+        <h2>$45.000</h2>
+        <button class="button-add" onclick="add('product-3', 45000)">Agregar </button>
+    </div>
+    <div class="product-container">
+        <h3>Plan Intermedio 3</h3>
+        <img src="./Media/Captura4.PNG" alt="">
+        <h2>$55.000</h2>
+        <button class="button-add" onclick="add('product-4', 55000)">Agregar </button>
+    </div>
+    <div class="product-container">
+        <h3>Plan Avanzado</h3>
+        <img src="./Media/Captura5.PNG" alt="">
+        <h2>$20.000</h2>
+        <button class="button-add" onclick="add('product-5', 20000)">Agregar </button>
+    </div>
+    <div class="product-container">
+        <h3>Plan Avanzado 2</h3>
+        <img src="./Media/Captura6.PNG" alt="">
+        <h2>$20.000</h2>
+        <button class="button-add" onclick="add('product-6', 20000)">Agregar </button>
+    </div>
+    </div>
 </body>
-<script src="./index.js"></script>
+<script src="main.js"></script>
 </html>
+
