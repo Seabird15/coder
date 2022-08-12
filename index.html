@@ -7,20 +7,76 @@
     <link rel="stylesheet" href="/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <div class="header">
-        <h1>FITNESS PARA TODOS</h1>
-        <img src="/Media/logoooo.png" alt="">
+    <div class="header">     
     </div>
     <div class="page-nav">
-        <img src="/Media/Diseño sin título.png" alt="" class="banner">
-        <button id= "checkout" class="button-checkout" onclick="pay()">Pagar</button>
+        <img src="/Media/logo.png" alt="" class="logo">
+        <a href="#banner"></a>
+        <img src="/Media/gamerback.jpg" alt="" class="banner" id="banner" >
+        </a>
+        <!-- <button id= "checkout" class="button-checkout" onclick="pay()">Pagar</button> -->
     </div>
+    <main class="contenedor-principal">
+        <div class="title">
+            <h1 id="h1">BIENVENIDOS A GGWP STORE!</h1>
+        </div>
+        <div class="nav">
+            <ul class="nav-ul">
+                <li class="nav-link">Inicio</li>
+                <li class="nav-link">Productos</li>
+                <li class="nav-link">Contacto</li>
+                <li class="nav-link">Redes</li>
+            </ul>
+        </div>
+    </main>
     <hr>
-    <div class="nav">
+    <div class="page-content">
+        <div class="product-container">
+            <h3>God of War</h3>
+            <img src="./Media/games/game1.jpg" alt="">
+            <h2>$20.000</h2>
+            <button class="button-add" onclick="add('product-1', 20000)">Agregar </button>
+        </div>
+        <div class="product-container">
+            <h3>Horizon</h3>
+            <img src="./Media/games/game2.jpg" alt="">
+            <h2>$40.000</h2>
+            <button class="button-add" onclick="add('product-2', 40000)">Agregar </button>
+        </div>
+        <div class="product-container">
+            <h3>CTR</h3>
+            <img src="./Media/games/game3.jpg" alt="">
+            <h2>$45.000</h2>
+            <button class="button-add" onclick="add('product-3', 45000)">Agregar </button>
+        </div>
+        <div class="product-container">
+            <h3>Ghost</h3>
+            <img src="./Media/games/game4.jpg" alt="">
+            <h2>$55.000</h2>
+            <button class="button-add" onclick="add('product-4', 55000)">Agregar </button>
+        </div>
+        <!-- <div class="product-container">
+            <h3>Plan Avanzado</h3>
+            <img src="" alt="">
+            <h2>$20.000</h2>
+            <button class="button-add" onclick="add('product-5', 20000)">Agregar </button>
+        </div>
+        <div class="product-container">
+            <h3>Plan Avanzado 2</h3>
+            <img src="./Media/Captura6.PNG" alt="">
+            <h2>$20.000</h2>
+            <button class="button-add" onclick="add('product-6', 20000)">Agregar </button>
+        </div> -->
+        </div>
+
+    <!-- <div class="nav">
         <ul>
             <li>
                 <a href="#" class="nav-link">Inicio</a>
