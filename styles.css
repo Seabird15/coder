@@ -2,13 +2,20 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'BIZ UDGothic', sans-serif;
 }
 
 body{
     margin: 0px;
+    color: goldenrod;
     background-color: #182258;
     background-image: linear-gradient(43deg, #182258 0%, #731e6d 46%, #0e0e0e 100%);
-    font-family: 'BIZ UDGothic', sans-serif;
+    
+}
+.darkMode {
+    color: rgb(243, 242, 242);
+    background-color: #000000;
+    background-image: linear-gradient(43deg, #000000 0%, #000000 46%, #931b1b 100%);
 }
 /*IMAGEN BANNER*/
 .page-nav .banner {
@@ -26,39 +33,134 @@ body{
     cursor: pointer;
 }
 /* TITULO */
-#h1{
+h1{
     color: #ffffff;
     display: flex;
     justify-content: center;
     margin-top: 80px;
     font-size: 45px;
 }
-#h1:hover {
+h1:hover {
     color: goldenrod;
     cursor: pointer;
 }
-h3, h2 {
-    color: goldenrod;
-}
+
 hr {
     margin: 20px;
 }
+/*BOTONES CATALOGO*/
+.btn-catalogo {
+ margin: 0px 220px 0px 250px;
+ padding: 10px;
+ border-radius: 20px;
+}
+.btn-catalogo:hover {
+    background-color: #f0e0e6;
+    background-image: linear-gradient(43deg, #f0e0e6 0%, #e8cae8 46%, #ffffff 100%);
+}
 /*NAV*/
-ul {
-    display: flex;
-    justify-content: center;
+
+
+/*PRODUCTOS DESDE JS*/
+.ocultar{
+    display: none;
 }
-.nav-link {
-    list-style: none;
-    margin: 20px;
-    color: goldenrod;
-    cursor: pointer;
+.productosEstilos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr)
 }
-li:hover{
+.inputBorder{
+    border: solid,black,1px
+    
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  input[type=text]:focus {
+    border: 3px solid #555;
+  }
+
+/*Card*/
+#productos{
+    background-color: #9a6d97;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 15px;
+}
+.card{
+    width: 90%;
+    max-width: 350px;
+    margin: 1rem auto;
+    border: 1px solid black;
+    border-radius: 10%;
+    text-align: center;
+    background-color: white;
+    max-height: 800px;
+}
+.card:hover{
+    background-color: #f0e0e6;
+    background-image: linear-gradient(43deg, #f0e0e6 0%, #e8cae8 46%, #ffffff 100%);
+    cursor: pointer;    
+}
+.card h3{
+    color: black;
+    margin: 0.5rem 0rem;
+    padding: 0.25rem;
+    padding-top: 1rem;
+    font-size: 2.25rem;
+    height: 120px;
+
+}
+.card img{
+    border-radius: 2%;
+    min-width: 250px;
+    width: 100%;
+    height: 300px;
+}
+.content{
+    padding: 1rem;
+    font-size: 1rem;
+
+}
+.content button{
+    padding: 0.5rem;
+    text-decoration: none;
+    color: gray;
+    border: 1px black solid;
+    border-radius: 20%;
     color: white;
+    background-color: black;
+    font-size: 1.25rem;
+
 }
+.content button:hover{
+    color: black;
+    background-color: antiquewhite;
+    height: 200%;
+    
+}
+.autorCard{
+    font-size: 2rem;
+    height: 80px;
+    color: black;
+}
+.precioCard{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: goldenrod;
+}
+
 /*CONTENIDO PAG*/
-.page-content {
+/* .page-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -82,7 +184,7 @@ li:hover{
 .product-container img {
     width: 300px;
 
-}
+} */
 /*BOTONES*/
 .button-add {
     font-size: 14px;
@@ -104,106 +206,20 @@ li:hover{
     border: 2px solid black;
 } 
 
-/* button{
-    font-size: 16px;
-    text-align: center;
-    border-radius: 8px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-.header {
-    display: flex;
-    justify-content: center;
-}
-.header img {
-    width: 30px;
-    height: 34px;
-    padding: 2px;
-}
-.nav ul {
-    display: flex;
-    justify-content: center;
-    letter-spacing: 2px;
-    
-}
-.nav li {
-    padding: 50px;
-}
-.nav-link {
-    text-decoration: none;
-    color: black;
-    background-color: #eaf4ea;
+/*CONTACTO*/
+.form {
+    margin:  10px 500px;
+    background-color: #731e6d;
     border: 2px solid black;
-    padding: 4px;
-    border-radius: 6px 6px 6px 6px;
-    
+    border-radius: 5px;
 }
-.nav-link:hover{
-    background-color: beige;
+form {
+    padding: 20px;
 }
-.page-nav{
-    position: relative;
+#texto {
+    padding: 20px;
 }
-.page-nav .banner {
-    width: 100%;
-    border: 1px solid black;
+.submit {
+    margin: 5px;
+    padding: 10px;
 }
-.button-checkout {
-
-    background-color: white;
-    color: black;
-    border: 2px solid black;
-    transition: 0.4s;
-    bottom: 10px;
-}
-.button-checkout:hover{
-    background-color: #4caf50;
-    border: 1px solid black;
-}
-hr {
-    margin: 10px;
-}
-
-.page-nav h1 {
-    margin: 20px;
-}
-.page-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    border: 1px solid rgb(252, 0, 0);
-}
-.product-container{
-    margin: 15px;
-    padding: 2px 16px;
-    position: relative;
-    cursor: pointer;
-}
-.product-container:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-.product-container img {
-    width: 300px;
-
-}
-.button-add {
-    border:none;
-    font-size: 16px;
-    text-align: center;
-    border-radius: 8px;
-    background-color: white;
-    color: black;
-    padding: 10px 2px;
-    border: 2px solid #4caf50;
-    transition-duration:  0.4s;
-    position: absolute;
-    right: 15px;
-    bottom: 10px;
-    cursor: pointer;
-
-}
-.button-add:hover{
-    background-color: #4caf50;
-    border: 1px solid black;
-} 
-*/

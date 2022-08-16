@@ -11,33 +11,58 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
     <div class="header">     
     </div>
     <div class="page-nav">
-        <img src="/Media/logo.png" alt="" class="logo">
+        <!-- <img src="/Media/logo.png" alt="" class="logo"> -->
         <a href="#banner"></a>
         <img src="/Media/gamerback.jpg" alt="" class="banner" id="banner" >
         </a>
         <!-- <button id= "checkout" class="button-checkout" onclick="pay()">Pagar</button> -->
     </div>
+        <button id="botonDarkMode" class="btn btn-dark">Dark</button>
+        <button id="botonLightMode" class="btn btn-light">Light</button>
     <main class="contenedor-principal">
-        <div class="title">
-            <h1 id="h1">BIENVENIDOS A GGWP STORE!</h1>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="#">GGStore</a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#h1">Tienda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
         </div>
-        <div class="nav">
-            <ul class="nav-ul">
-                <li class="nav-link">Inicio</li>
-                <li class="nav-link">Productos</li>
-                <li class="nav-link">Contacto</li>
-                <li class="nav-link">Redes</li>
-            </ul>
-        </div>
-    </main>
+          <div class="h1">
+             <h1 id="h1">BIENVENIDOS A GGSTORE!</h1>
+          </div>
+          <button class="btn-catalogo" id="verCatalogo">Mostrar Juegos</button>
+          <button class="btn-catalogo" id="ocultarCatalogo">Dejar de mostrar</button>
     <hr>
-    <div class="page-content">
+    <!-- PRODUCTOS TRAIDOS DESDE LA PLANTILLA JS -->
+    <div id="productos">
+    </div>
+    <!-- <div class="page-content">
         <div class="product-container">
             <h3>God of War</h3>
             <img src="./Media/games/game1.jpg" alt="">
@@ -62,75 +87,20 @@
             <h2>$55.000</h2>
             <button class="button-add" onclick="add('product-4', 55000)">Agregar </button>
         </div>
-        <!-- <div class="product-container">
-            <h3>Plan Avanzado</h3>
-            <img src="" alt="">
-            <h2>$20.000</h2>
-            <button class="button-add" onclick="add('product-5', 20000)">Agregar </button>
-        </div>
-        <div class="product-container">
-            <h3>Plan Avanzado 2</h3>
-            <img src="./Media/Captura6.PNG" alt="">
-            <h2>$20.000</h2>
-            <button class="button-add" onclick="add('product-6', 20000)">Agregar </button>
-        </div> -->
-        </div>
-
-    <!-- <div class="nav">
-        <ul>
-            <li>
-                <a href="#" class="nav-link">Inicio</a>
-            </li>
-            <li>
-                <a href="#" class="nav-link">Quienes somos</a>
-            </li>
-            <li>
-                <a href="#" class="nav-link">Planes</a>
-            </li>
-            <li>
-                <a href="#" class="nav-link">Contactanos</a>
-            </li>
-            
-        </ul>
-    </div>
-    <div class="page-content">
-    <div class="product-container">
-        <h3>Plan Básico</h3>
-        <img src="./Media/Captura.PNG" alt="">
-        <h2>$20.000</h2>
-        <button class="button-add" onclick="add('product-1', 20000)">Agregar </button>
-    </div>
-    <div class="product-container">
-        <h3>Plan Intermedio</h3>
-        <img src="./Media/Captura2.PNG" alt="">
-        <h2>$40.000</h2>
-        <button class="button-add" onclick="add('product-2', 40000)">Agregar </button>
-    </div>
-    <div class="product-container">
-        <h3>Plan Intermedio 2</h3>
-        <img src="./Media/Captura3.PNG" alt="">
-        <h2>$45.000</h2>
-        <button class="button-add" onclick="add('product-3', 45000)">Agregar </button>
-    </div>
-    <div class="product-container">
-        <h3>Plan Intermedio 3</h3>
-        <img src="./Media/Captura4.PNG" alt="">
-        <h2>$55.000</h2>
-        <button class="button-add" onclick="add('product-4', 55000)">Agregar </button>
-    </div>
-    <div class="product-container">
-        <h3>Plan Avanzado</h3>
-        <img src="./Media/Captura5.PNG" alt="">
-        <h2>$20.000</h2>
-        <button class="button-add" onclick="add('product-5', 20000)">Agregar </button>
-    </div>
-    <div class="product-container">
-        <h3>Plan Avanzado 2</h3>
-        <img src="./Media/Captura6.PNG" alt="">
-        <h2>$20.000</h2>
-        <button class="button-add" onclick="add('product-6', 20000)">Agregar </button>
-    </div>
-    </div>
+    </div>     -->
+        <section class="form">
+            <form>
+                <h1 id="contacto">SOLICITAR JUEGO</h1> 
+                <h5>Ingrese nombre</h5>
+                <input type="text" placeholder="Skyrim" id="nombreJuego">
+                <h5>Ingrese Año</h5>
+                <input type="text" placeholder="2012" id="anioJuego">
+                <h5>Ingrese Valor</h5>
+                <input type="text" placeholder="Valor" id="valorJuego">
+            </form>
+            <button id="guardarJuegos">Enviar</button>
+        </section>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </body>
 <script src="main.js"></script>
 </html>
