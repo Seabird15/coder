@@ -167,7 +167,7 @@ function guardarJuego() {
 }
 
 function cargarProductosCarrito(productosDelStorage) {
-  modalBody.innerHTML = " ";
+  modalBody.innerHTML = "";
   productosDelStorage.forEach((productoCarrito) => {
     modalBody.innerHTML += `
           <div class="card border-primary mb-3" id ="productoCarrito${productoCarrito.id}" style="max-width: 540px;">
@@ -197,6 +197,7 @@ function compraTotal(productosTotal) {
   console.log(acumulador);
   //if acumularo = 0 o !=
   if (acumulador == 0) {
+    alert("No existen productos en el carrito")
     parrafoCompra.innerHTML = `<p>No hay productos en el carrito</p>`;
   } else {
     parrafoCompra.innerHTML = `Importe de su compra ${acumulador}`;
